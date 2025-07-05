@@ -1,0 +1,54 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+.logo{
+    position: relative;
+}
+.logo h1{
+     padding: 0px 30px;
+    font-size: 40px;
+}
+.logo img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 15px;
+}
+.connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #DA7C25 0.36%, #B923E1 100%);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.connect:hover{
+    background: linear-gradient(90deg, #FFD93D, #FF6B6B);
+    transform: scale(1.05);
+}
+.menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.menu li img{
+    display: flex;
+    margin: auto;
+
+}
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
