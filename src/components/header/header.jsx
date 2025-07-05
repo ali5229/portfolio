@@ -8,13 +8,14 @@ import github22 from '../../assets/tech/github3.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import ProfileCard from '../ProfileCard/ProfileCard'
 import avatar from '../../assets/profile_nobg.png'
-
+import leetcode from '../../assets/tech/leetcode.svg'
 
 const header = () => {
   return (
     <div className='header'>
         <ul>
             <li><a href="https://github.com/ali5229" target="_blank"><img src={github22} alt="" /></a></li>
+            <li><a href="https://leetcode.com/u/aliabbas55506" target="_blank"><img src={leetcode} alt="" /></a></li>
             <li><a href="https://www.linkedin.com/in/ali5229" target="_blank"><img src={linkedin} alt="" /></a></li>
             <li><a href="https://www.instagram.com/m_ali_abbas_404" target="_blank" ><img src={instagram} alt="" /></a></li>
             <li><a href="https://x.com/aliabbas55506" target="_blank" ><img src={twitter} alt="" /></a></li>
