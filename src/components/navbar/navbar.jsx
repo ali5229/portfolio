@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './navbar.css'
 import theme from '../../assets/theme_pattern.svg'
-import underline from '../../assets/nav_underline.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import menu_open from '../../assets/menu_open.svg'
+import menu_close from '../../assets/menu_close.svg'
 
 const Navbar = () => {
     const [menu, setMenu] = useState("home");
@@ -27,9 +28,11 @@ const Navbar = () => {
             <div className='logo'>
               <h1>Ali Abbas</h1>
               <img src={theme} alt="" />
+              {/* <img src={menu_open} alt="" /> */}
             </div>
             
             <ul className="menu">
+               {/* <img src={menu_close} alt="" /> */}
                 <li>
                   <AnchorLink className='anchor-link' href='#home'>
                     <p onClick={()=>{setMenu("home")}}>Intro</p>

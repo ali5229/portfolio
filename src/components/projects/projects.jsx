@@ -20,7 +20,7 @@ const projects = () => {
                     reverse={false}
                     duration={2}
                     ease="power3.out"
-                    initialOpacity={0.2}
+                    initialOpacity={0}
                     animateOpacity
                     scale={1.1}
                     threshold={0.2}
@@ -45,7 +45,7 @@ const projects = () => {
                     reverse={true}
                     duration={2}
                     ease="power3.out"
-                    initialOpacity={0.2}
+                    initialOpacity={0}
                     animateOpacity
                     scale={1.1}
                     threshold={0.2}
@@ -68,7 +68,7 @@ const projects = () => {
                     reverse={false}
                     duration={2}
                     ease="power3.out"
-                    initialOpacity={0.2}
+                    initialOpacity={0}
                     animateOpacity
                     scale={1.1}
                     threshold={0.2}

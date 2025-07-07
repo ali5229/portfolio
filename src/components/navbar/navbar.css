@@ -4,7 +4,7 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
-    width: 85%;
+    width: 85vw;
     padding: 15px 10%;
     background-color: transparent; /* Translucent white */
     backdrop-filter: blur(10px); /* For modern browsers */
@@ -71,4 +71,12 @@
 .anchor-link{
     text-decoration: none;
     color: white;
+}
+@media(max-width:768px) {
+    .navbar{
+        margin: 20px 50px;;
+    }
+    .anchor-link .connect{
+        display: none;
+    }
 }
