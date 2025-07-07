@@ -32,21 +32,21 @@ const Navbar = () => {
             <ul className="menu">
                 <li>
                   <AnchorLink className='anchor-link' href='#home'>
-                    <p onClick={()=>{setMenu("home")}}>Intro</p>{menu =="home" ?<img src={underline} alt="underline"/>:<></>}
+                    <p onClick={()=>{setMenu("home")}}>Intro</p>
                     </AnchorLink>
                   </li>
                 <li>
                   <AnchorLink className='anchor-link' offset={50} href='#skills'>
-                    <p onClick={()=>{setMenu("skills")}}>Skills</p>{menu =="skills" ?<img src={underline} alt="underline"/>:<></>}
+                    <p onClick={()=>{setMenu("skills")}}>Skills</p>
                     </AnchorLink>
                   </li>
                 <li>
                   <AnchorLink className='anchor-link' offset={50} href='#projects'>
-                    <p onClick={()=>{setMenu("projects")}}>Projects</p>{menu =="projects" ?<img src={underline} alt="underline"/>:<></>}</AnchorLink>
+                    <p onClick={()=>{setMenu("projects")}}>Projects</p></AnchorLink>
                   </li>
                 <li>
                   <AnchorLink className='anchor-link' offset={50} href='#contact'>
-                    <p onClick={()=>{setMenu("contact")}}>Contact</p>{menu =="contact" ?<img src={underline} alt="underline"/>:<></>}
+                    <p onClick={()=>{setMenu("contact")}}>Contact</p>
                     </AnchorLink>
                   </li>
             </ul>

@@ -59,11 +59,14 @@
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
-.menu li img{
-    display: flex;
-    margin: auto;
-
+.menu li:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+.menu li p:hover{
+    color: #ee9a4c;
 }
 .anchor-link{
     text-decoration: none;
