@@ -1,44 +1,60 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './navbar.css'
 import theme from '../../assets/theme_pattern.svg'
 import underline from '../../assets/nav_underline.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-const navbar = () => {
-    const [menu , setMenu] = useState("home");
+const Navbar = () => {
+    const [menu, setMenu] = useState("home");
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
     
-  return (
-    <div id='home' className='navbar'>
-        <div className='logo'>
-          <h1>Ali Abbas</h1>
-          <img src={theme} alt="" />
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+            const isScrollingUp = prevScrollPos > currentScrollPos;
+            
+            setVisible(isScrollingUp || currentScrollPos < 10);
+            setPrevScrollPos(currentScrollPos);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPos]);
+
+    return (
+        <div id='home' className={`navbar ${visible ? 'visible' : 'hidden'}`}>
+            <div className='logo'>
+              <h1>Ali Abbas</h1>
+              <img src={theme} alt="" />
+            </div>
+            
+            <ul className="menu">
+                <li>
+                  <AnchorLink className='anchor-link' href='#home'>
+                    <p onClick={()=>{setMenu("home")}}>Intro</p>{menu =="home" ?<img src={underline} alt="underline"/>:<></>}
+                    </AnchorLink>
+                  </li>
+                <li>
+                  <AnchorLink className='anchor-link' offset={50} href='#skills'>
+                    <p onClick={()=>{setMenu("skills")}}>Skills</p>{menu =="skills" ?<img src={underline} alt="underline"/>:<></>}
+                    </AnchorLink>
+                  </li>
+                <li>
+                  <AnchorLink className='anchor-link' offset={50} href='#projects'>
+                    <p onClick={()=>{setMenu("projects")}}>Projects</p>{menu =="projects" ?<img src={underline} alt="underline"/>:<></>}</AnchorLink>
+                  </li>
+                <li>
+                  <AnchorLink className='anchor-link' offset={50} href='#contact'>
+                    <p onClick={()=>{setMenu("contact")}}>Contact</p>{menu =="contact" ?<img src={underline} alt="underline"/>:<></>}
+                    </AnchorLink>
+                  </li>
+            </ul>
+            <AnchorLink className='anchor-link' offset={50} href='#contact'><div className="connect">
+                  Connect With Me
+                    </div></AnchorLink>
         </div>
-        
-        <ul className="menu">
-            <li>
-              <AnchorLink className='anchor-link' href='#home'>
-                <p onClick={()=>{setMenu("home")}}>Intro</p>{menu =="home" ?<img src={underline}/>:<></>}
-                </AnchorLink>
-              </li>
-            <li>
-              <AnchorLink className='anchor-link' offset={50} href='#skills'>
-                <p onClick={()=>{setMenu("skills")}}>Skills</p>{menu =="skills" ?<img src={underline}/>:<></>}
-                </AnchorLink>
-              </li>
-            <li>
-              <AnchorLink className='anchor-link' offset={50} href='#projects'>
-                <p onClick={()=>{setMenu("projects")}}>Projects</p>{menu =="projects" ?<img src={underline}/>:<></>}</AnchorLink>
-              </li>
-            <li>
-              <AnchorLink className='anchor-link' offset={50} href='#contact'>
-                <p onClick={()=>{setMenu("contact")}}>Contact</p>{menu =="contact" ?<img src={underline}/>:<></>}
-                </AnchorLink>
-              </li>
-        </ul>
-        <AnchorLink className='anchor-link' offset={50} href='#contact'><div className="connect">
-              Connect With Me
-                </div></AnchorLink>
-    </div>
-  )
+    )
 }
-export default navbar
+
+export default Navbar

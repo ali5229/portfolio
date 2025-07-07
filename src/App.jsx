@@ -27,12 +27,12 @@ const App = () => {
         <Navbar />
         <Header />
           <AnimatedContent
-              distance={150}
+              distance={200}
               direction="vertical"
               reverse={false}
               duration={1.2}
               ease="power3.out"
-              initialOpacity={0.2}
+              initialOpacity={0}
               animateOpacity
               scale={1.1}
               threshold={0.2}
@@ -41,12 +41,12 @@ const App = () => {
               <Skills />
             </AnimatedContent>
               <AnimatedContent
-              distance={150}
+              distance={200}
               direction="vertical"
               reverse={false}
               duration={1.2}
               ease="power3.out"
-              initialOpacity={0.2}
+              initialOpacity={0}
               animateOpacity
               scale={1.1}
               threshold={0.2}
@@ -55,12 +55,12 @@ const App = () => {
               <Projects />
             </AnimatedContent>
               <AnimatedContent
-              distance={150}
+              distance={200}
               direction="vertical"
               reverse={false}
               duration={1.2}
               ease="power3.out"
-              initialOpacity={0.2}
+              initialOpacity={0}
               animateOpacity
               scale={1.1}
               threshold={0.2}

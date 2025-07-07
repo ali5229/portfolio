@@ -2,7 +2,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 170px;
+    position: fixed;
+    top: 0;
+    width: 85%;
+    padding: 15px 10%;
+    background-color: transparent; /* Translucent white */
+    backdrop-filter: blur(10px); /* For modern browsers */
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    
+}
+
+
+.navbar.visible {
+    transform: translateY(0);
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
 }
 .logo{
     position: relative;

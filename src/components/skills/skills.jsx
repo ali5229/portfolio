@@ -7,7 +7,7 @@ import canva from '../../assets/tech/canva.svg'
 import colab from '../../assets/tech/colab.svg'
 import css from '../../assets/tech/css.svg'
 import fbase from '../../assets/tech/firebase.svg'
-import github from '../../assets/tech/github.svg'
+import github from '../../assets/tech/github3.svg'
 import gitlab from '../../assets/tech/gitlab.svg'
 import html from '../../assets/tech/html.svg'
 import node from '../../assets/tech/nodejs.svg'
@@ -19,6 +19,7 @@ import figma from '../../assets/tech/figma.svg'
 import openai from '../../assets/tech/openai.svg'
 
 const skills = () => {
+   
   return (
     <div id='skills' className='skills'>
             <div className="title">
