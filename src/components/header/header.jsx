@@ -26,7 +26,7 @@ const header = () => {
         <p>I build clean, efficient, and scalable software — from frontend interfaces to backend systems.
 Passionate about writing maintainable code, tackling complex challenges, and learning new technologies along the way.</p>
         <div className="header-btns">
-            <AnchorLink className='anchor-link' offset={50} href='#contact'><div className="connect">
+            <AnchorLink className='anchor-link' offset={50} href='#contact'><div className="head-connect">
               Connect With Me
               </div></AnchorLink>
              <a href="/CV_AliAbbas_latest.pdf.pdf" download=""><div className="resume">

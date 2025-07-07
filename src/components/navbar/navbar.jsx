@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect,useRef } from 'react'
 import './navbar.css'
 import theme from '../../assets/theme_pattern.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -9,7 +9,16 @@ const Navbar = () => {
     const [menu, setMenu] = useState("home");
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
-    
+    const menuRef = useRef();
+
+    const openMenu = () =>{
+      menuRef.current.style.right = "0";
+
+    }
+    const closeMenu = () =>{
+      menuRef.current.style.right = "-350px";
+      
+    }
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollPos = window.pageYOffset;
@@ -27,12 +36,12 @@ const Navbar = () => {
         <div id='home' className={`navbar ${visible ? 'visible' : 'hidden'}`}>
             <div className='logo'>
               <h1>Ali Abbas</h1>
-              <img src={theme} alt="" />
-              {/* <img src={menu_open} alt="" /> */}
+              <img className='logo-img' src={theme} alt="" />
+              <img src={menu_open} onClick={openMenu} className='nav-mob-open' alt="" />
             </div>
             
-            <ul className="menu">
-               {/* <img src={menu_close} alt="" /> */}
+            <ul className="menu" ref={menuRef}>
+               <img src={menu_close} onClick={closeMenu} className='nav-mob-close' alt="" />
                 <li>
                   <AnchorLink className='anchor-link' href='#home'>
                     <p onClick={()=>{setMenu("home")}}>Intro</p>

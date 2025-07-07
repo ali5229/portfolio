@@ -65,7 +65,7 @@
 .language hr{
     outline: none;
     border: none;
-    width: 50%;
+    width: 60%;
     height: 8px;
     border-radius: 50px;
     background: linear-gradient(270deg, #df8908, #b415ff );
@@ -99,4 +99,36 @@
 .technology img{
     width: 100px;
     height: 100px;
+}
+@media(max-width:768px){
+    .title h1{
+        font-size: 50px;
+    }
+    .title img{
+        width: 100px;
+    }
+    .para{
+        font-size: 18px;
+        gap: 20px;
+        width: 70vw;
+    }
+    .title2 h1{
+        font-size: 40px;
+    }
+    .title2 img{
+        width: 100px;
+    }
+    .languages {
+        width: 80vw;
+
+    }
+    .language p{
+        font-size: 20px;
+    }
+    .technologies{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .technology{
+        width: 80px;
+    }
 }

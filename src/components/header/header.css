@@ -63,6 +63,18 @@
     font-weight: 500;
     margin-bottom: 50px;
 }
+.head-connect{
+      padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #DA7C25 0.36%, #B923E1 100%);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.head-connect:hover{
+     background: linear-gradient(90deg, #FFD93D, #FF6B6B);
+    transform: scale(1.05);
+}
 .resume{
   padding: 20px 40px;
   border-radius: 50px;
@@ -77,4 +89,20 @@
   background-color: #fff;
   color: #000;
   transition: all 0.3s ease-in-out;
+}
+
+@media(max-width:768px){
+    .header ul{
+        display: none;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .header h1{
+        font-size: 30px;
+    }
+    .header p{
+        font-size: 20px;
+        width: 80vw;
+    }
 }
