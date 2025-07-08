@@ -62,18 +62,18 @@ const projects = () => {
                 <img src={videoCall} alt="" />
             </div>
             </AnimatedContent>
-            <AnimatedContent
-                    distance={1500}
-                    direction="horizontal"
-                    reverse={false}
-                    duration={2}
-                    ease="power3.out"
-                    initialOpacity={0}
-                    animateOpacity
-                    scale={1.1}
-                    threshold={0.2}
-                    delay={0.5}
-                    >
+                <AnimatedContent
+                        distance={1500}
+                        direction="horizontal"
+                        reverse={false}
+                        duration={2}
+                        ease="power3.out"
+                        initialOpacity={0}
+                        animateOpacity
+                        scale={1.1}
+                        threshold={0.2}
+                        delay={0.5}
+                        >
             <div className="project">
                 <img src={studentManagement} alt="" />
                 <div className="project-detail">

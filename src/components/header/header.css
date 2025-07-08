@@ -105,4 +105,12 @@
         font-size: 20px;
         width: 80vw;
     }
+    .head-connect{
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .resume{
+        padding: 10px 20px;
+        text-align: center;
+    }
 }

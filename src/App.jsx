@@ -23,7 +23,7 @@ const App = () => {
         <Background entered={false} />
       </div>
       
-      <div style={{ position: 'relative', zIndex: 1 }}>
+      <div style={{ position: 'relative', zIndex: 1, overflow:'hidden' }}>
         <Navbar />
         <Header />
           <AnimatedContent

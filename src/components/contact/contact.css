@@ -99,6 +99,28 @@
         flex-direction: column;
     }
     .contact-left h1{
-        font-size: 40px;
+        font-size: 20px;
+    }
+    .contact-section{
+        width: 80vw;
+    }
+    .contact-left p{
+        font-size: 15px;
+    }
+    .contact-right label{
+        font-size: 15px;
+        font-weight: 300px;
+    }
+    .contact-right input{
+        width: 250px;
+        font-size: 15px;
+    }
+    .contact-right textarea{
+        width: 290px;
+        font-size: 15px;
+    }
+    .contact-submit{
+        padding: 10px 20px;
+        font-size: 15px;
     }
 }
