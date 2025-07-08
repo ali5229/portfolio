@@ -113,6 +113,7 @@
     }
     .contact-right input{
         width: 250px;
+        height: 50px;
         font-size: 15px;
     }
     .contact-right textarea{
@@ -122,5 +123,10 @@
     .contact-submit{
         padding: 10px 20px;
         font-size: 15px;
+    }
+}
+@media(max-width:410px){
+    .contact-right textarea{
+        width: 200px;
     }
 }

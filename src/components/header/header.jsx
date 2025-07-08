@@ -36,7 +36,6 @@ Passionate about writing maintainable code, tackling complex challenges, and lea
 
         </div>
         <div>
-           <div className="cover"></div>
            <ProfileCard
   name="Ali Abbas"
   title="Software Engineer"
