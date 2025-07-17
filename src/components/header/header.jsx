@@ -29,7 +29,7 @@ Passionate about writing maintainable code, tackling complex challenges, and lea
             <AnchorLink className='anchor-link' offset={50} href='#contact'><div className="head-connect">
               Connect With Me
               </div></AnchorLink>
-             <a href="/CV_AliAbbas_latest.pdf.pdf" download=""><div className="resume">
+             <a href="/Resume_AliLatest.pdf" download=""><div className="resume">
                  Download Resume
               </div></a>
         </div>
